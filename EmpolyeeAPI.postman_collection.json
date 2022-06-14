@@ -1,0 +1,325 @@
+{
+	"info": {
+		"_postman_id": "f13bbd1b-bfcc-4b2c-a65b-bfd9f97feae9",
+		"name": "EmpolyeeAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Employee",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstname\": \"Thilina\",\r\n  \"lastname\": \"Akalanka\",\r\n  \"phone\": \"094773411582\",\r\n  \"email\": \"alwisthilina@gmail.com\",\r\n  \"gender\": \"M\",\r\n  \"address\": \"20/43, Shramadana Mw, Ettukala, Negombo, Sri Lanka.\",\r\n  \"jobtitle\": \"Dotnet Developer\",\r\n  \"salary\": 11000,\r\n  \"hireddate\": \"2022-06-14T09:41:43.158Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44335/api/Employee",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44335",
+					"path": [
+						"api",
+						"Employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Employee",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstname\": \"James2\",\r\n    \"lastname\": \"Smith2\",\r\n    \"phone\": \"094773411582\",\r\n    \"email\": \"smith@gmail.com\",\r\n    \"gender\": \"Male\",\r\n    \"address\": \"20/43, Shramadana Mw, Ettukala, Negombo, Sri Lanka.\",\r\n    \"jobtitle\": \"Dotnet Developer\",\r\n    \"salary\": 11000,\r\n    \"hireddate\": \"2022-06-14T09:41:43.158Z\",\r\n    \"dtstamp\": \"2022-06-14T17:45:12.740712Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44335/api/Employee/eb2de0ae-263f-44b9-a21d-443fd705e57e",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44335",
+					"path": [
+						"api",
+						"Employee",
+						"eb2de0ae-263f-44b9-a21d-443fd705e57e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44335/api/Employee",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44335",
+					"path": [
+						"api",
+						"Employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Employee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44335/api/Employee",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44335",
+					"path": [
+						"api",
+						"Employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44335/api/Employee/ccc367e5-e524-4b39-b7d9-544f5937ed07",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44335",
+					"path": [
+						"api",
+						"Employee",
+						"ccc367e5-e524-4b39-b7d9-544f5937ed07"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gateway - Auth",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstname\": \"James\",\r\n  \"lastname\": \"Smith\",\r\n  \"phone\": \"094773411582\",\r\n  \"email\": \"smith@gmail.com\",\r\n  \"gender\": \"Male\",\r\n  \"address\": \"20/43, Shramadana Mw, Ettukala, Negombo, Sri Lanka.\",\r\n  \"jobtitle\": \"Dotnet Developer\",\r\n  \"salary\": 11000,\r\n  \"hireddate\": \"2022-06-14T09:41:43.158Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44335/api/Employee",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44335",
+					"path": [
+						"api",
+						"Employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gateway - Add Employee",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImN0eSI6IkpXVCJ9.eyJuYmYiOjE2NTUyMjU3MjMsImV4cCI6MTY1NTgzMDUyMywiaWF0IjoxNjU1MjI1NzIzfQ.C5xkrhuu9-leXtFWGTJy30h6Nc6AKNtSXFxc8BSusPg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstname\": \"Thilina\",\r\n  \"lastname\": \"Akalanka\",\r\n  \"phone\": \"094773411582\",\r\n  \"email\": \"alwisthilina@gmail.com\",\r\n  \"gender\": \"M\",\r\n  \"address\": \"20/43, Shramadana Mw, Ettukala, Negombo, Sri Lanka.\",\r\n  \"jobtitle\": \"Dotnet Developer\",\r\n  \"salary\": 11000,\r\n  \"hireddate\": \"2022-06-14T09:41:43.158Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44393/Employee",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44393",
+					"path": [
+						"Employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gateway - Update Employee",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImN0eSI6IkpXVCJ9.eyJuYmYiOjE2NTUyMjU3MjMsImV4cCI6MTY1NTgzMDUyMywiaWF0IjoxNjU1MjI1NzIzfQ.C5xkrhuu9-leXtFWGTJy30h6Nc6AKNtSXFxc8BSusPg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstname\": \"James2\",\r\n    \"lastname\": \"Smith2\",\r\n    \"phone\": \"094773411582\",\r\n    \"email\": \"smith@gmail.com\",\r\n    \"gender\": \"Male\",\r\n    \"address\": \"20/43, Shramadana Mw, Ettukala, Negombo, Sri Lanka.\",\r\n    \"jobtitle\": \"Dotnet Developer\",\r\n    \"salary\": 11000,\r\n    \"hireddate\": \"2022-06-14T09:41:43.158Z\",\r\n    \"dtstamp\": \"2022-06-14T17:45:12.740712Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44393/Employee/eb2de0ae-263f-44b9-a21d-443fd705e57e",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44393",
+					"path": [
+						"Employee",
+						"eb2de0ae-263f-44b9-a21d-443fd705e57e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gateway - Get Employee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44335/api/Employee",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44335",
+					"path": [
+						"api",
+						"Employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gateway - Get Employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44335/api/Employee",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44335",
+					"path": [
+						"api",
+						"Employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gateway - Delete Employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44393/Employee/ccc367e5-e524-4b39-b7d9-544f5937ed07",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44393",
+					"path": [
+						"Employee",
+						"ccc367e5-e524-4b39-b7d9-544f5937ed07"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
